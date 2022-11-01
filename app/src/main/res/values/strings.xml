@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Калькулятор</string>
+    <string name="slash">/</string>
+    <string name="multiply">*</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="result">Результат</string>
+    <string name="enter_2nd_number">Введите второе число</string>
+    <string name="enter_1st_number">Введите первое число</string>
+</resources>

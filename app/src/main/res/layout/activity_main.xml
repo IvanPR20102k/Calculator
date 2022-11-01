@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:elevation="20dp"
+            app:strokeColor="@color/grey"
+            app:strokeWidth="4dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input1"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_1st_number"
+                android:inputType="number"
+                android:textSize="30sp" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:elevation="20dp"
+            app:strokeColor="@color/grey"
+            app:strokeWidth="4dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input2"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_2nd_number"
+                android:inputType="number"
+                android:textSize="30sp" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="122dp"
+            android:orientation="horizontal">
+
+            <TableRow>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/plus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="12dp"
+                    android:backgroundTint="@color/orange"
+                    android:text="@string/plus"
+                    android:textSize="60sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/minus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="12dp"
+                    android:backgroundTint="@color/orange"
+                    android:text="@string/minus"
+                    android:textSize="60sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/multiply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="12dp"
+                    android:backgroundTint="@color/orange"
+                    android:text="@string/multiply"
+                    android:textSize="60sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/divide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="12dp"
+                    android:backgroundTint="@color/orange"
+                    android:text="@string/slash"
+                    android:textSize="60sp" />
+            </TableRow>
+        </TableLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:elevation="0dp"
+            app:strokeColor="@color/grey"
+            app:strokeWidth="4dp">
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="@string/result"
+                android:textSize="30sp" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
